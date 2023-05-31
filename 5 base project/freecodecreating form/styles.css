@@ -1,0 +1,103 @@
+
+    /* The input, textarea, and select elements are given a width of 100% to make them take up the full width of their parent elements.
+     The margin property is set to 10px 0 0 0 to add 10px of margin to the top of the selected elements and set the other margins to 0. */
+    input, 
+    textarea, 
+    select {
+      display: block;
+      width: 100%;
+      margin: 10px 0 0 0;
+      background-color: #0a0a23;
+      border: 1px solid #0a0a23;
+      min-height: 2em;
+    }
+    
+    input, textarea {
+      margin: 10px 0 0 0;
+      width: 100%;
+      background-color: #0a0a23;
+      border: 1px solid #0a0a23;
+      color :#ffffff;
+      
+    }
+
+    
+    body {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        background-color: #060662;
+        color: #f5f6f7;
+      }
+      h1, p {
+        margin: 1em auto;
+        text-align: center;
+      }
+      form {
+        margin: 0 auto;
+        max-width: 500px;
+        min-width: 300px;
+        width: 60vw;
+        padding:5em;
+
+
+      }
+      fieldset {
+        border: none;
+        padding: 2rem 0;
+        border-bottom: 3px solid #ffffff;
+      }
+
+      /*last-of-type pseudo-class is used to select the last fieldset element on the page. The border-bottom property
+       is set to none for this selector, so the border is removed from the last fieldset element. This will prevent the 
+       border from looking out of place on the last fieldset element.*/
+      fieldset:last-of-type {
+        border-bottom: none;
+
+        /*The label elements are set to display: block to make them take up the full width of their parent container. 
+        The margin-bottom: 10px adds a 10px margin to the bottom of each label element.
+
+        The input[type="text"], textarea, select selector targets all text input, textarea, and select elements and 
+        sets them to display: block to make them take up the full width of their parent container. The width: 100% property 
+        ensures that each element takes up the full width of its container. The margin: 10px 0 0 0 property sets a 10px margin
+         at the top of each element and sets the other margins to 0.*/
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      
+      /*This will select all elements with a class of inline and set their width property to unset, 
+      which means that the element will take up its default width based on its content and other CSS properties.*/
+      .inline {
+       width: unset;
+       margin-right: 0.5em;
+       margin-top: 0;
+       margin-bottom: 0;
+       margin-left: 0;
+       vertical-align: middle;
+      }
+      
+      input[type="submit"] {
+        display: block;
+        width: 60%;
+        min-width:300px;
+        margin: 1em 0 auto;
+        height: 2em; /* add this line */
+        font-size: 1.1rem; /* add this line */
+        background-color: #0d0707;
+        border-color:white;
+      }
+
+      input[type="file"] {
+        padding: 1px 2px;
+      }
+      
+      a {
+        color: #dfdfe2;
+      }
+      
+      
+      
+      
